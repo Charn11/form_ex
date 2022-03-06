@@ -1,0 +1,76 @@
+@font-face {
+    font-family: title;
+    src: url(/home/hp/repos/form_ex/font_icons/KaushanScript-Regular.otf);
+}
+body{
+    min-height: 100vh;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: url(/home/hp/repos/form_ex/images/david_lang) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 35%;
+}
+.logo{
+    position: relative;
+    display: inline;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    top: 15%;
+}
+#icon{
+    width: 50px;
+    position: relative;
+    top: 10px;
+}
+.credits{
+    display: flex;
+    top: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    margin-top: auto;
+}
+h1{
+    font-family: title;
+    font-size: 35px;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: blue;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100vh;
+    background-color: white;
+}
+.info{
+    display: flex;
+    height: 35%;
+    flex-direction: column;
+    font-size: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-right: 60px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 60px;
+}
