@@ -2,6 +2,14 @@
     font-family: title;
     src: url(/home/hp/repos/form_ex/font_icons/KaushanScript-Regular.otf);
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+    margin-bottom: 0vh;
+}
 body{
     min-height: 100vh;
     margin: 0;
@@ -9,6 +17,8 @@ body{
     padding: 0;
     background: url(/home/hp/repos/form_ex/images/david_lang) no-repeat;
     background-size: cover;
+    background-position: center center;
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     flex: 1;
@@ -34,13 +44,12 @@ body{
 }
 .credits{
     display: flex;
-    top: 100vh;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
-    color: white;
+    color: black;
     width: 100%;
     justify-content: center;
-    margin-top: auto;
+    margin-top: 100%;
 }
 h1{
     font-family: title;
@@ -56,7 +65,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     width: 65%;
-    height: 100vh;
+    height: 100;
     background-color: white;
 }
 .info{
@@ -78,7 +87,6 @@ a:hover{
     flex-direction: column;
     padding-left: 30px;
     padding-right: 60px;
-    position: relative;
 }
 #form_head{
     font-size: 15px;
@@ -86,11 +94,21 @@ a:hover{
     top: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.show{
+    display: inline;
+    position: relative;
+    top: 70px;
+}
+#check{
+    position: relative;
+    bottom: 18px;
+}
 input,label{
     display: flex;
 }
 input:focus{
-    
+    outline: none;
+    border: 1px solid blue;
 }
 input{
     padding: 5px;
@@ -126,7 +144,7 @@ button{
     font-weight: bold;
     padding: 4px 0 4px 0;
     border-radius: 5%;
-    background-color: darkolivegreen;
+    background-color: seagreen;
     color: antiquewhite;
 }
 button:hover{
@@ -136,5 +154,5 @@ button:hover{
     color: #1162dbb3;
 }
 #a:visited{
-    color: darkolivegreen;
+    color: seagreen;
 }
