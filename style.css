@@ -164,6 +164,9 @@ button{
 button:hover{
     background-color: #1162dbb3;
 }
+#a:link{
+    color: seagreen;
+}
 #a:hover{
     color: #1162dbb3;
 }
