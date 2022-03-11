@@ -54,7 +54,7 @@ body{
     display: flex;
     font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
-    color: black;
+    color: white;
     width: 100%;
     justify-content: center;
     margin-top: 100%;
@@ -64,8 +64,11 @@ h1{
     font-family: title;
     font-size: 35px;
 }
+.cred:link{
+    color: pink;
+}
 .cred:visited{
-    color: white;
+    color: pink;
 }
 .cred:hover{
     color: blue;
