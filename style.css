@@ -1,6 +1,6 @@
 @font-face {
     font-family: title;
-    src: url(/home/hp/repos/form_ex/font_icons/KaushanScript-Regular.otf);
+    src: url(font_icons/KaushanScript-Regular.otf);
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
