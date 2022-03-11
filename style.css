@@ -64,10 +64,10 @@ h1{
     font-family: title;
     font-size: 35px;
 }
-a:visited{
+.cred:visited{
     color: white;
 }
-a:hover{
+.cred:hover{
     color: blue;
 }
 .form{
