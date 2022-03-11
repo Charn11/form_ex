@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="title">
+        <img src="/home/hp/repos/form_ex/images/david_lang">
         <div class="logo">
             <h1><img id="icon" src="/home/hp/repos/form_ex/font_icons/content_paste_black_24dp.svg">COOL FORM</h1>
         </div>
@@ -36,6 +37,9 @@
                         <label for="pass">PASSWORD</label>
                         <input name="password" required type="password" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
                         title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                        <div id="passAlert">
+
+                        </div>
                     </div>
                     <div class="block2">
                         <label for="lastname">LAST NAME</label>
@@ -43,14 +47,15 @@
                         <label for="phone">PHONE NUMBER</label>
                         <input required type="number" id="phone">
                         <label for="confirm">CONFIRM PASSWORD</label>
-                        <input name="confirm" required type="password" id="confirm">
+                        <input name="confirm" required type="password" id="confirm" 
+                        title="re-enter password">
                     </div>
                 </div>
                 <div class="show">
                     Show password: <input type="checkbox" id="check">
                 </div>
                 <div class="button">
-                    <button>Create Account</button>
+                    <button type="submit" id="submit">Create Account</button>
                     <p>Already have an account? <a id="a" href="https://www.google.com/">Log in</a></p>
                 </div>
             </form>

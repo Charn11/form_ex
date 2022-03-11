@@ -10,13 +10,19 @@ check.addEventListener('change', e => {
     }
 });
 
-let valid = document.getElementsByTagName('button')
-valid.document.addEventListener('click', e=> {
-    const password = document.querySelector('input[name=password]');
-    const confirm = document.querySelector('input[name=confirm]');
-    if (confirm.value === password.value) {
-    confirm.setCustomValidity('');
-    } else {
-    confirm.setCustomValidity('Passwords do not match');
+const buon = document.getElementById('submit');
+let confirm = document.getElementById('confirm');
+buon.addEventListener('click', e => {
+    let str1 = pass.value;
+    console.log(str1);
+    let str2 = confirm.value;
+    console.log(str2);
+    if(str1!=str2)
+    {
+       // alert("passwords do not match");
+        document.getElementById('passAlert').innerText = "*passwords do not match";
+        pass.style.border = '1px solid red';
+        confirm.style.border = '1px solid red';
+        e.preventDefault();
     }
 })
